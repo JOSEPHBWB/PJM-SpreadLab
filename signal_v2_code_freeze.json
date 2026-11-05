@@ -1,0 +1,8 @@
+{
+  "frozen_at_utc": "2026-10-30T23:13:45.416585+00:00",
+  "signal_v2_py_sha256": "06ad9c61131ffb4af66478374455391082675a5f3d18ee3371d72bdfec79b31c",
+  "dependencies": {
+    "research.py": "2d87f4023f6eddef022c3ac50a24968cf3cb8306b4b91d859b51b2f7c618c9aa",
+    "signals.py": "fc696721868b0a3af6eac0d332e5c6cf5f5863752bde6ca4e42ddb2a28ccedd6"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": "cost-risk-signal-v1",
+  "frozen_before_first_run": "2026-10-30",
+  "evaluation_years": [2023, 2024, 2025],
+  "label_embargo_days": 60,
+  "refit": "monthly expanding window",
+  "decision_time_ept": "09:00 on D-1 (conservative research convention)",
+  "calendar_keys": ["hour_beginning", "weekend", "quarter"],
+  "shrinkage_pseudocount": 72,
+  "risk_hourly_es99_budget_usd": 50,
+  "base_position_mw": 1,
+  "extra_cost_sensitivity_usd_mwh": [0, 0.25, 0.5, 1, 2, 5],
+  "bootstrap_block_days": 7,
+  "bootstrap_replications": 2000,
+  "bootstrap_seed": 31027,
+  "primary_cost_scenario": "admin + RTO deviation + max(East, West) deviation; DEC adds DA operating reserve",
+  "primary_invoice_count": 0,
+  "standalone_invoice_count_per_active_month": 5,
+  "test_status": "retrospective chronological evaluation; previously inspected years; no untouched holdout; not tuned to results"
+}

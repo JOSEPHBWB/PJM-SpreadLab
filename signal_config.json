@@ -1,0 +1,48 @@
+{
+  "version": "load-signal-v1",
+  "frozen_before_signal_results": "2026-10-30",
+  "decision_hour_ept": 10,
+  "creation_to_availability_buffer_minutes": 15,
+  "label_embargo_days": 90,
+  "evaluation_years": [
+    2023,
+    2024,
+    2025
+  ],
+  "refit": "monthly expanding",
+  "primary": "Load HGB",
+  "controls": [
+    "No trade",
+    "Always INC",
+    "Always DEC",
+    "Calendar HGB",
+    "Load Ridge",
+    "Expected error -> spread"
+  ],
+  "hgb": {
+    "max_iter": 120,
+    "max_depth": 3,
+    "max_leaf_nodes": 7,
+    "min_samples_leaf": 100,
+    "learning_rate": 0.05,
+    "l2_regularization": 10,
+    "early_stopping": false,
+    "random_state": 27
+  },
+  "ridge_alpha": 100,
+  "cost_base": "RTO + East plus admin, no invoice overhead; same accounting as cost-risk milestone",
+  "forecast_features": [
+    "load GW",
+    "day mean/peak/min/range GW",
+    "hourly ramp GW",
+    "relative daily load",
+    "forecast age",
+    "available pre-cutoff revision GW",
+    "revision availability"
+  ],
+  "future_actual_error": "diagnostic/label only, never a same-delivery trading feature",
+  "sample_status": "retrospective chronological evaluation on previously inspected years, no untouched holdout",
+  "publication_status": "evaluated_at is creation time, not independently archived public release; 15-minute buffer is an assumption",
+  "wind_solar_status": "API history retained 30 days only; not included in 2022-2025 backtest",
+  "protocol_note": "Before first strategy fit, use 10:00 EPT (before 11:00 DA close) to admit 09:45-created forecast after 15-minute buffer. This change was based on feed timestamp coverage, not backtest performance."
+}

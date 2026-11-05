@@ -1,8 +1,26 @@
+# Data and private caches (not redistributed)
 data/
-outputs/
+# Only selected, reviewed public reports in outputs/
+outputs/*
+!outputs/PJM_2026_Frozen_Evaluation.html
+!outputs/PJM_Cost_Risk_Signals.html
+!outputs/PJM_Load_Signals.html
+!outputs/research.png
+!outputs/signals.png
+!outputs/signal_v2.png
+!outputs/REPORT_zh.md
+!outputs/SIGNALS_zh.md
+!outputs/SIGNAL_V2_2026_zh.md
+!outputs/V2_ASSESSMENT_zh.md
+# Local files
 __pycache__/
+*.py[cod]
+.venv/
+venv/
 .env
+.env.*
+!.env.example
 *.zip
-signal_run.log
-run_summary.json
 *.log
+run_summary.json
+.ipynb_checkpoints/

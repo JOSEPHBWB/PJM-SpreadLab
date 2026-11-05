@@ -16,6 +16,8 @@ I reconstructed administrative and operating-reserve charges, examined the loss 
 | Primary load absolute-loss INC/no-trade, modeled P&L | — | -$11,085 | Better than Always INC, but still negative |
 | Squared-loss load INC control, modeled P&L | — | -$3,823 | A control outperformed the primary variant |
 
+**Sample coverage:** The spread and modeled-cost baseline uses **2023–2025**, while the historical tail-risk analysis covers **2022–2025**, including Winter Storm Elliott in December 2022.
+
 The historical and 2026 spread/cost averages are **descriptive comparisons**, not a matched-sample causal estimate. P&L is modeled on the stated 1 MW strategy convention; it is not executable net trading profit. The 2026 strategy comparison uses **6,528 forecast-covered hours**.
 
 ## Findings
@@ -59,6 +61,8 @@ The figures are research diagnostics; numerical assumptions and full comparisons
 | [CLOSEOUT.md](CLOSEOUT.md) | Final conclusions and carefully scoped result wording |
 | [BASELINE.md](BASELINE.md) | Earlier milestone, preserved rather than rewritten as the final result |
 | [2026 configuration](signal_v2_config.json) / [policy freeze](signal_v2_freeze.json) / [code freeze](signal_v2_code_freeze.json) | Original records supporting the frozen evaluation |
+
+**Language note:** The three detailed HTML reports are in Chinese. This README provides the English-language summary of the research questions, methods, principal results and limitations. An English version of the frozen 2026 evaluation is not yet included.
 
 GitHub displays HTML reports as source/downloadable files rather than always rendering them in the repository view. Download an HTML file and open it locally in a browser to read the formatted report.
 
